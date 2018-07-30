@@ -1,0 +1,15 @@
+/* poppins */
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(poppins/Poppins-Bold.ttf);
+}
+
+/* merriweather */
+@font-face {
+    font-family: "Merriweather Regular";
+    src: url(merriweather/Merriweather-Regular.ttf);
+}

@@ -1,0 +1,263 @@
+/* imports */
+
+@import url(../fonts/fonts.css);
+/* Color palette */
+
+:root {
+    --white: rgb(255, 255, 255);
+    --white-two: rgb(243, 243, 243);
+    --black: rgb(0, 0, 0);
+    --dusk-blue: rgb(48, 38, 126);
+}
+
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: transparent;
+}
+
+/* .clearfix::after */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* html */
+
+html {
+    font-family: "Merriweather Regular", "Times New Roman", serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+/* body */
+
+body {
+    width: 90%;
+    margin: auto;
+    background: url(img/website-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* text styles */
+
+h1 {
+    font-family: "Poppins Bold", "Arial", sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.67;
+    letter-spacing: normal;
+    color: var(--black);
+    padding-bottom: 8px;
+    margin-bottom: 48px;
+}
+
+h5 {
+    font-family: "Poppins Bold", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: var(--dusk-blue);
+    padding-bottom: 8px;
+}
+
+p {
+    font-family: "Merriweather Regular", "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: var(--black);
+    padding-bottom: 8px;
+    margin-bottom: 48px;
+}
+
+.font-bold {
+    font-weight: 900;
+}
+
+/* button styles */
+
+.btn-default-small {
+    text-decoration: none;
+    font-family: "Poppins Bold", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--black);
+}
+
+.btn-blue-large {
+    padding: 18px 60px;
+    border-radius: 2px;
+    background-color: var(--dusk-blue);
+    box-shadow: 2.5px 5.4px 9.9px 0.1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    font-family: "Poppins Regular", "Arial", sans-serif;
+    font-size: 16px;
+    padding-top: 19px;
+    color: #fff;
+}
+
+/* nav */
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 144px;
+    /* background: red; */
+}
+
+.nav-logo,
+.nav-icons {
+    flex: 1;
+}
+
+.nav-icons {
+    text-align: right;
+}
+
+.nav-icons a,
+.nav-logo a,
+.nav-logo img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-icons a img {
+    margin-right: 30px;
+}
+
+/* landing */
+
+.landing {
+    height: 864px;
+    position: relative;
+    /* background: lightblue; */
+}
+
+.landing-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 192px;
+}
+
+.landing-right {
+    margin-top: -144px;
+}
+
+.icon-scroll-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 8px;
+    margin: auto;
+}
+
+/* skills */
+.skills {
+    background-color: var(--white-two);
+    height: 720px;
+    text-align: center;
+}
+
+.skills h1 {
+    padding-top: 96px;
+}
+
+.design-programs img {
+    margin: 0 94px;
+    padding-bottom: 8px;
+}
+
+.web-technologies p {
+    margin-top: 48px;
+}
+
+.web-technologies img {
+    margin: 0 106px;
+    padding-bottom: 8px;
+}
+
+
+/* works-left */
+.works-left {
+    width: 100%;
+    position: relative;
+    margin: 192px 0;
+}
+
+.works-left > .work-text {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    text-align: left;
+}
+
+.works-left > .work-text > .instagram {
+    position: absolute;
+    left: 250px;
+}
+
+.works-left > .project-thumbnail {
+    float: right;
+    box-shadow: 2.5px 5.4px 9.9px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+/* works-right */
+.works-right {
+    width: 100%;
+    position: relative;
+    margin: 192px 0;
+}
+
+.works-right > .work-text {
+    position: absolute;
+    top: 170px;
+    right: 0;
+    text-align: right;
+}
+
+.works-right > .work-text > .instagram {
+    position: absolute;
+    right: 250px;
+}
+
+.works-right > .project-thumbnail {
+    float: left;
+    box-shadow: 2.5px 5.4px 9.9px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    margin-top: 207px;
+    text-align: center;
+    margin-bottom: 207px;
+}
+
+.footer a {
+    text-decoration: none;
+}
